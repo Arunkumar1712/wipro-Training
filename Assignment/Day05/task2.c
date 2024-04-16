@@ -1,3 +1,4 @@
+// program  to get series 1, 2, 4, 8, 16, 32, 64
 #include <stdio.h>
 
 int main()
@@ -12,4 +13,9 @@ int main()
         else
         printf("%d, ", i);
     }
+
 }
+/* Output we got is
+Enter the number :64
+1, 2, 4, 8, 16, 32, 64
+*/

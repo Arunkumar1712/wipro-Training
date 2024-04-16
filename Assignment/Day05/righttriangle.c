@@ -1,3 +1,4 @@
+/*Right Triangle start pattern*/
 #include <stdio.h>
 
 int main()
@@ -21,3 +22,17 @@ int main()
     }
     
 }
+/*Output that we got*/
+/*
+Enter the number :5
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+
+*/
