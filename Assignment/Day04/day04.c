@@ -36,3 +36,27 @@ int main() {
 
     return 0;
 }
+/*Output we got is
+Enter the Employee Detail
+Enter SI_No:
+1
+Enter Id:
+1
+Enter name:
+arun
+Enter gender:
+m
+Enter phoneNo:
+12345
+Enter address:
+chennai
+Enter salary:
+12000
+
+========================================
+            Employee Details
+========================================
+SLNo    ID      Name    Gender  Phno    Address Salary
+----    ---     ----    ----    ------- ------  -------
+1       1       arun    m       12345   chennai 12000.0
+*/
