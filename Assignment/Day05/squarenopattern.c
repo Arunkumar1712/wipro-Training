@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int number;
+    printf("Enter the number :");
+    scanf("%d", &number);
+    for (int i = 1; i <= number*number; i++)
+    {
+        if(i%number == 0)
+        printf("%d\n",i);
+        else
+        printf("%d*",i);
+        
+        
+    }
+}
