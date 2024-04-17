@@ -1,11 +1,11 @@
-//Program to print alphabet triangle
+/*Program to print alphabet triangle*/
 
 #include<stdio.h>
 
 int main()
 {
     int n;
-    printf("Enter the value of n: ");
+    printf("Enter the number: ");
     scanf("%d",&n);
     if(n<2||n>26)
     {
@@ -38,3 +38,12 @@ int main()
     }
     return 0;
 }
+/*Output we got is
+Enter the number: 6
+     A
+    ABA
+   ABCBA
+  ABCDCBA
+ ABCDEDCBA
+ABCDEFEDCBA
+*/
