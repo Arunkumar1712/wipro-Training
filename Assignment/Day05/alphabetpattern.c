@@ -1,39 +1,32 @@
 /*Program to print alphabet triangle*/
 
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
     int n;
     printf("Enter the number: ");
-    scanf("%d",&n);
-    if(n<2||n>26)
+    scanf("%d", &n);
+    int i, j, k;
+    int row;
+    char ch = 65;
+
+    for (row = 0; row < n; row++)
     {
-        printf("Invalid input. n should be between 2 and 26.\n");
-        return 1;
-    }
-    for(int i=1;i<=n;i++)
-    {
-        for(int j=1;j<=n-i;j++)
+        for (i = n - 1; i > row; i--)
         {
             printf(" ");
         }
-        for(int j=1;j<=i;j++)
+        for (j = 0, ch = 65; j <= row; j++, ch++)
         {
-            printf("%c",'A'+j-1);
-            if(j<i)
-            {
-                printf("");
-            }
+            printf("%c", ch);
         }
-        for(int j=i-1;j>=1;j--)
+        ch--;
+        for (k = row, --ch; k > 0; k--, ch--)
         {
-            printf("%c",'A'+j-1);
-            if(j>1)
-            {
-                printf("");
-            }
+            printf("%c", ch);
         }
+
         printf("\n");
     }
     return 0;
